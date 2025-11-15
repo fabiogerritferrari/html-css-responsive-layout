@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    block-size: border-box;
+}
+
+/* !Utiltys */
+
+.d-flex{
+    display: flex;
+}
+
+/* ?Header */
+
+header > div {
+    font-family: 'Nerko One';
+    color: #d99a4c;
+    font-size: 3rem;
+    text-align: center;
+}
+
+
+/* ?footer */
+
+footer{
+    background-color: #7c69a4;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0.7rem;
+    padding: 25px 0px;
+}
+
+.copyright{
+    font-weight: 900;
+    margin-bottom: 0.5rem;
+}
+
+.terms > ul{
+    list-style: none;
+    gap: 2rem;
+}
+
+.terms > ul > li > a{
+    color: white;
+}
+
+
+@media screen (min-width=480px) {
+
+    header > div {
+        text-align: :start;
+    }
+    
+}
