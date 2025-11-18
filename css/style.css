@@ -12,12 +12,13 @@
 }
 
 .container{
-    padding: 2rem 2rem;
+    padding: 0rem 2rem;
 }
 
 .font-w-800{
     font-weight: 800;
 }
+
 
 /* ?Header */
 
@@ -42,6 +43,20 @@ main{
     flex-direction: column;
 }
 
+.plate-name{
+    font-size: 2rem;
+    color: #4e3969;
+}
+
+.plate-name > span{
+    display: none;
+}
+
+.plate-category{
+    color: #ded2c4;
+    margin-bottom: 0.5rem;
+}
+
 .plate-video{
     position: relative;
 }
@@ -51,14 +66,9 @@ main{
     height: auto;
 }
 
-.plate-name{
-    margin-bottom: 1rem;
-    font-size: 2rem;
-}
 
-.plate-category{
-    color: #ded2c4;
-    margin-bottom: 0.5rem;
+.description{
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
 .plate-description{
@@ -76,13 +86,38 @@ main{
     gap: 1rem;
 }
 
+.social{
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.social > figure{
+    border: 1px solid transparent;
+    border-radius: 25px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    padding: 0.3rem 0.5rem;
+    flex-basis: calc(100% / 5);
+}
+
+.social > figure > img{
+    width: 1.5rem;
+    height: auto;
+    vertical-align: middle;
+}
+
+.social > figure > span{
+    display: none;
+    vertical-align: middle;
+}
+
+
 .adv{
     display: none;
 }
 
 .adv > img {
-        width: 100%;
-        height: auto;
+    width: 100%;
+    height: auto;
 }
 
 .divisor{
@@ -140,7 +175,7 @@ footer address{
 
 
 @media screen and (min-width:480px) {
-
+    
     header > h1 {
         text-align: start;
     }
@@ -148,36 +183,64 @@ footer address{
     .adv{
         display: block;
     }
-
+    
     .presentation figure > img{
         width: 25%;
         float: inline-start;
         margin-right: 1rem;
     }
+    
+    .social > figure > span{
+        display: none;
+    } 
 
-
+    .social > figure{
+        display: flex;
+        justify-content: center;
+    }
+    
+    
 }
 
 @media screen and (min-width:992px) {
-
+    
+    
+    .plate-name > span{
+        display: inline;
+    }
+    
     footer{
         flex-direction:row;
         justify-content:space-between;
         padding:1.5rem 1.5rem;
         text-align: start;
     }
-
+    
     .container{
-    max-width: 1080px;
-    margin:0 auto; 
+        max-width: 1080px;
+        margin:0 auto; 
     }
-
+    
     .plate{
         flex-direction: row;
-        }
-
+    }
+    
     .plate-video > img{
         flex-basis: 50%;
     }
+    
+    
+    .social > figure > img{
+        width: 2rem;
+        margin-right: 2px;
+    }
+    
+    .social > figure > span{
+        display: inline;
+    }
 
+}
+
+.margin-b-2{
+    margin-bottom: 2rem;
 }
